@@ -15,8 +15,8 @@ class CurrencyConverter():
         if from_currency != 'USD' : 
             amount = amount / self.currencies[from_currency] 
   
-        # limiting the precision to 4 decimal places 
-        amount = round(amount * self.currencies[to_currency], 4) 
+        # limiting the precision to 2 decimal places 
+        amount = round(amount * self.currencies[to_currency], 2) 
         return amount
 
 class App(tk.Tk):
